@@ -1,16 +1,57 @@
-# React + Vite
+# Illahabadi — Riyaaz
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Personal rap-training app for one user. Focus and motivation first: practice
+tracker, freestyle trainer, synthesized beat engine with a visual syllable
+grid, musicality + wordsmith curricula, the signature Laid-Back Flow module,
+a one-pick daily feed, and an ADHD-friendly focus module.
 
-Currently, two official plugins are available:
+**Fully offline.** All data local, all audio synthesized with the Web Audio
+API, fonts self-hosted (bundled at build time). No accounts, no network
+calls at runtime, no tracking. Progress lives in your browser's
+localStorage.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Run it
 
-## React Compiler
+```bash
+cd rap-app
+npm install     # first time only
+npm run dev     # then open the printed http://localhost:5173
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+`npm run build` + `npm run preview` serves the production build.
 
-## Expanding the Oxlint configuration
+## Where things live
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+| What | Where |
+|---|---|
+| Your rhyme groups + lines | `src/data/seed-data.json` |
+| Artists for the daily feed | `src/data/favorites.json` |
+| Real beats you download | `public/beats/` (+ list filenames in `public/beats/manifest.json`) |
+| Progress / streaks / shipped log | browser localStorage (keys prefixed `illahabadi.`) |
+
+## Adding more of your writing
+
+Append to `src/data/seed-data.json` following the existing shape — full
+instructions in **NOTION_IMPORT.md**. The loader (`src/lib/data.js`)
+tolerates partial/malformed entries, so a bad edit won't crash the app.
+
+## Notion token (later, optional)
+
+The app never needs it. When you want to automate imports:
+
+1. Create an internal integration at notion.so/my-integrations and share
+   your pages with it.
+2. Create `rap-app/.env` (already gitignored) containing
+   `NOTION_TOKEN=secret_...`
+3. Build out `src/notion.js` — the stub reads the token and documents the
+   mapping you need to implement. Run it as a Node script that appends to
+   `seed-data.json`; keep the app itself token-free.
+
+## Docs
+
+- `NOTION_IMPORT.md` — how to append months of Notion pages to the seed
+- `MUSICALITY_NOTES.md` — definitions behind the curriculum (+ tabla/G-funk note)
+- `WORDSMITH_NOTES.md` — lyric-craft definitions to refine over time
+- `BEATS_SOURCES.md` — where to legally download free beats
+- `KNOWLEDGE_TRANSFER.md` — what was built and why
+- `BUILD_NOTES.md` — assumptions and blockers from the build run
