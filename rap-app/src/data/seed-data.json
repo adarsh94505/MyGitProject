@@ -1,0 +1,34 @@
+{
+  "_note": "Real seed extracted from Adarsh's own Notion page 'Verses Prep - Kitna Pani' (2025-09-30). This is his own writing. Full import of all pages is a separate step. Scripts are mostly Roman (transliterated Hindustani), with some Devanagari/Nastaliq mixed in.",
+  "rhymeGroups": [
+    {
+      "ending": "aani",
+      "words": ["kamani", "kaha ni", "kahani", "kara ni", "jaga ni", "jawani", "gawa ni", "gawa di", "kaha thi", "chalani", "janani", "bajani", "pata ni", "bhalaai", "kangaali", "katali", "kasai", "parai", "kuladi", "tabahi", "talaashi", "dalali", "sagai", "anaaree", "kharaabee", "chapati chapai", "daranti", "jati jatae", "nakkaashi", "samadhi", "khayali pulaw", "chalaaki", "chhakaati", "kala ki", "laffaaji", "safari", "kisaani", "jubani", "toofani", "nibhaani", "sipaahi", "ruhani", "begani shadi", "shaitani", "sethani", "bemaari", "bhikhaari", "siyaasi", "siyaahi", "kitaabi", "batlaati", "badnaami", "barbaadi", "barsaati", "balkhaati", "balshaali", "mandraati", "rakhwaali", "abhaagi", "faryaadi"]
+    },
+    {
+      "ending": "ooo",
+      "words": ["Maloom", "Moorkh", "Moorti", "Kaabu", "Pooch", "Sahaanbhooti", "Dhoondh", "Kartoot", "Jaan boojh", "Upyukt", "Kaboo", "Moolya", "Khajoor", "Khoob", "Khoon", "Manhoos", "Suqoon", "Jaloos", "Dhoop", "Roop", "Maroof", "Maujood", "Maktoob", "Mansoob", "Mansoobe", "Maghroor", "Masroof", "Abaroo", "Adhoora", "Taallook", "Huzoor", "Fizool", "Taboot", "Doob", "Rooth", "Daud dhoop", "Rang roop", "Loop", "Foot foot ke", "Behroopiya", "Jaroor", "Ooonth", "Thook", "Dhoorth", "Chaloo", "Aaloo", "Khaloo", "Gungunaun", "Dalbadloon", "Kaam chalaoon", "Chook", "Ghareloo", "Ooth patang", "lootere"]
+    },
+    {
+      "ending": "aun",
+      "words": ["Gana sunaun", "Dabaun", "Le jaun", "Dilaoun", "Karaun", "Khilaun", "Bataun", "Pakau", "Gungunaun", "Bithaun", "Bikaun", "Likhaun", "Dikhaun", "Jhukaun", "Fida hun", "Bechaun", "Giraun", "Sulaun", "Duaaon", "Rijhaun"]
+    }
+  ],
+  "lines": [
+    { "type": "line", "text": "zara bhi zokhim na lena hai zyada zokhim / aur le lo to ek hon raatien aur din" },
+    { "type": "line", "text": "utarunga karz kaise mai doodh ka / rakhunga khoon ka kaise khayaal" },
+    { "type": "line", "text": "sach to yahi tu maan na maan / maine dekha yahi saal dar saal" },
+    { "type": "line", "text": "pyaasa pyaada paani pane ko bhage / dauda thoda fir bhari udaane" },
+    { "type": "line", "text": "jaise dekhe the nadani me / jawani gawadi laffaazi me / nayak ni khud ki kahani me" },
+    { "type": "line", "text": "mera kasoor ni / yaha paise bina koi wajood ni" },
+    { "type": "line", "text": "Mai jeeta zaroor par jeena zaroori zaroor ni hota" },
+    { "type": "line", "text": "illahabaad se chale the khokle seene ke saath / bana hai dil mera dilli aane ke baad" },
+    { "type": "line", "text": "sir pe aasmaan, zameer hai zameen ni" },
+    { "type": "line", "text": "na-ummeedi hi ummeed ki pehli manzil" },
+    { "type": "muhavara", "text": "aag lagne ke baad kua khodne se kaam nahi banta" },
+    { "type": "muhavara", "text": "acche hone ki burai acchi nahi" },
+    { "type": "idea", "text": "sona toot toot ke bhi uski keemat nahi kam hoti, balki samay ke saath aur qeemti hota rehta hai" },
+    { "type": "quote", "artist": "Mac Miller", "text": "Used to be a class clown now I got the last laugh" },
+    { "type": "quote", "artist": "Iqbal Ashhar", "text": "raushnī ne kabhī saaya nahīñ dekhā apnā" }
+  ]
+}
