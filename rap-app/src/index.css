@@ -1,0 +1,64 @@
+@import 'tailwindcss';
+
+/*
+ * Illahabadi — Riyaaz. Dark, calm, distraction-free.
+ * One accent (warm amber), one "done" tone (sage). No red anywhere.
+ */
+
+@theme {
+  --color-ink: #0c0e12; /* page background */
+  --color-surface: #13161c; /* cards */
+  --color-raise: #1a1e26; /* hover / raised */
+  --color-edge: #242a35; /* borders */
+  --color-body: #c6cdd7; /* body text */
+  --color-dim: #7c8593; /* secondary text */
+  --color-faint: #4d5563; /* tertiary text */
+  --color-amber: #d9a45b; /* single accent */
+  --color-amber-soft: #d9a45b26;
+  --color-sage: #8fae90; /* done / streak — calm green, never red */
+  --color-sage-soft: #8fae9022;
+
+  --font-sans:
+    system-ui, 'Segoe UI', Roboto, 'Noto Sans Devanagari',
+    'Noto Nastaliq Urdu', sans-serif;
+  --font-deva:
+    'Noto Sans Devanagari', system-ui, sans-serif;
+  --font-nastaliq:
+    'Noto Nastaliq Urdu', 'Noto Sans Devanagari', system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background: var(--color-ink);
+  color: var(--color-body);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Mixed-script text: let each script pick its own Noto face */
+.mixed-script {
+  font-family: var(--font-sans);
+  line-height: 1.9; /* Nastaliq needs vertical room */
+}
+
+::selection {
+  background: var(--color-amber-soft);
+}
+
+/* calm, slow transitions only — nothing snappy or gamified */
+button {
+  transition: background-color 200ms ease, border-color 200ms ease,
+    color 200ms ease, opacity 200ms ease;
+}
+
+input[type='range'] {
+  accent-color: var(--color-amber);
+}
+input[type='checkbox'] {
+  accent-color: var(--color-sage);
+}
